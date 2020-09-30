@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link   rel="stylesheet"  href="./index.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <button onclick="addProject()">ProjectsData</button><br><br>
+   <label>Projects List:</label> 
+    <select id="proj" name="proj" onchange="getteam(this.value)">
+      </select>
+      <h2>Technology Based On Project</h2>
+      <ol id="data">
+      </ol>
+      <label>Login :</label> 
+        <select id="dep"  onchange="getteam1(this.value)">
+        </select>
+        <h2>Based on Department showing issues and pending issues </h2>
+        <div class="jumbotron" >
+          <ol id="dpId">
+        </div>
+        
+        </ol>
+      
+        <script src="./project.js"></script>
+        <script src="./index.js"></script>
+
+</body>
+</html>
